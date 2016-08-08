@@ -7,7 +7,8 @@
 </head>
 <body>
 <form action="/test/springmvc.do" method="post">
- <input type="text" value="" name="birthday">
+ name:<input type="text" value="" name="name"><br/>
+ birthday:<input type="text" value="" name="birthday"><br/>
  <input type="submit" value="提交">
 </form>
 </body>

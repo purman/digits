@@ -17,8 +17,8 @@
 	
 	<!-- 日期转换器 -->
 	<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
-	   <property name="web">
-	   
+	   <property name="webBindingInitializer">
+	   <bean class="com.wangc.core.web.CustomDateEdtor"></bean>
 	   </property>
 	</bean>
 	
