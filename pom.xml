@@ -11,16 +11,12 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<!-- spring版本号 -->
 		<spring.version>4.1.7.RELEASE</spring.version>
-		<!-- mybatis版本号 -->
 		<mybatis.version>3.3.0</mybatis.version>
-		<!-- log4j日志文件管理包版本 -->
 		<slf4j.version>1.7.7</slf4j.version>
 		<log4j.version>1.2.17</log4j.version>
 	</properties>
 
-	<!-- 指定Maven仓库 国内的快一点 -->
 	<repositories>
 		<repository>
 			<id>oschinaRepository</id>
@@ -35,9 +31,7 @@
 		</repository>
 	</repositories>
 
-	<!-- 指定maven plugin仓库 -->
 	<pluginRepositories>
-		<!-- oschina的maven plugin仓库 -->
 		<pluginRepository>
 			<id>oschinaPluginRepository</id>
 			<name>local private nexus</name>
@@ -54,7 +48,6 @@
 	<build>
 		<finalName>babasport</finalName>
 		<plugins>
-			<!-- 编译的时候使用JDK8和UTF8编码 -->
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
@@ -63,7 +56,6 @@
 					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
-			<!-- 编译jar包 -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
@@ -110,7 +102,6 @@
 			<version>4.11</version>
 			<scope>test</scope>
 		</dependency>
-		<!-- 加入druid数据源依赖包 -->
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>druid</artifactId>
@@ -166,13 +157,11 @@
 			<artifactId>spring-test</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-		<!-- mybatis核心包 -->
 		<dependency>
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis</artifactId>
 			<version>${mybatis.version}</version>
 		</dependency>
-		<!-- mybatis/spring包 -->
 		<dependency>
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis-spring</artifactId>
@@ -208,8 +197,6 @@
 			<artifactId>slf4j-log4j12</artifactId>
 			<version>${slf4j.version}</version>
 		</dependency>
-		<!-- log end -->
-		<!-- 上传组件包 -->
 		<dependency>
 			<groupId>commons-fileupload</groupId>
 			<artifactId>commons-fileupload</artifactId>
@@ -231,5 +218,4 @@
 			<version>3.0.1</version>
 		</dependency>
 	</dependencies>
-
 </project>
